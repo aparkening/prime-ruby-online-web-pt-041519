@@ -8,14 +8,11 @@ def prime?(number)
     checking_number = 5
     while checking_number * checking_number <= number
       if (number % checking_number == 0 || number % (checking_number + 2) == 0)
-        # puts "Iterated #{iterated} times"
         return false
       else 
-        checking_number = checking_number + 6
-        # iterated += 1
+        checking_number += 6
       end
     end
-    # puts "Iterated #{iterated} times"
     return true
   end
 end
